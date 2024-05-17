@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    const me = {
+        name : '한재현',
+        address : '제주도 제주시 인다 1길',
+        phoneNum : '010-8000-0000',
+        canWalk : function(){
+            console.log('재현이가 걷는다.');
+        },
+        teaching : function(student){
+            student.levelUp();
+        }
+    }
+
+
+    const ormi = {
+        level: 1,
+        levelUp : function(){
+            this.level++;
+        }
+    }
+
+    me.teaching(ormi);
+
+</script>
+
+</body>
+</html>
